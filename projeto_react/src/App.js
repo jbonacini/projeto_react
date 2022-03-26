@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import './App.css';
 
-import Media from './components/media'
-import Intervalo from './components/intervalo';
-import Soma from './components/soma';
-import Sorteio from './components/sorteio';
+import Intervalo from './components/Intervalo'
+import Media from './components/Media'
+import Soma from './components/Soma'
+import Sorteio from './components/Sorteio'
 
 function App() {
   const [min, setMin] = useState(10)
@@ -12,9 +12,10 @@ function App() {
   return (
     <div className='App'>
       <h1>Projeto-Redux</h1>
-
+      
       <div className='linha'>
-        <Intervalo min={min} max={max}></Intervalo>
+        <Intervalo min={min} max={max}
+        onMinchaged={setMin} onMaxChanged={setMax}></Intervalo>
       </div>
 
       <div className='linha'>
