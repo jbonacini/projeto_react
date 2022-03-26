@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import { Provider } from 'react-redux';
-import configStore from './store/storeConfig/storeConfig.js';
+import configStore from './store/storeConfig/storeConfig';
 
 const store = configStore();
 
