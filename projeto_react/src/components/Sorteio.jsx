@@ -1,7 +1,7 @@
 import React from "react"
 import Card from "./Card"
 
-function Sorteio (props)  {
+function Sorteio(props){
     const {min, max} = props
     const aleatorio = parseInt(Math.random() * (max-min)) + min
     return (
@@ -10,7 +10,6 @@ function Sorteio (props)  {
                 <span>
                     <span>Resultado: </span>
                     <span>{aleatorio}</span>
-                    <span>{15}</span>
                 </span>
             </div>
         </Card>
